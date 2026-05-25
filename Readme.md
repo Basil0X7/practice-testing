@@ -7,6 +7,7 @@ built with Playwright and TypeScript.
 
 ## 🗂️ Project Structure
 
+```
 practice-testing/
 │
 ├── pages/                        # Page Object Models
@@ -33,6 +34,7 @@ practice-testing/
 ├── .env.example                  # Environment variables template
 ├── playwright.config.ts          # Playwright configuration
 └── package.json
+```
 ---
 
 ## ⚙️ Requirements
