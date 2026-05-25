@@ -8,26 +8,31 @@ built with Playwright and TypeScript.
 ## 🗂️ Project Structure
 
 practice-testing/
-├── pages/                    # Page Object Models
-│   ├── BasePage.ts           # Base class for all pages
-│   ├── LoginPage.ts          # Login page interactions
-│   ├── RegisterPage.ts       # Register page interactions
-│   ├── ProductsPage.ts       # Products listing & sort
-│   └── CartPage.ts           # Cart interactions
-├── tests/                    # Test files
-│   ├── auth.setup.ts         # Login session setup (runs once)
-│   ├── login.spec.ts         # Login feature tests
-│   ├── register.spec.ts      # Register feature tests
-│   ├── cart.spec.ts          # Cart feature tests
-│   └── sort.spec.ts          # Sort feature tests
+│
+├── pages/                        # Page Object Models
+│   ├── BasePage.ts               # Base class for all pages
+│   ├── LoginPage.ts              # Login page interactions
+│   ├── RegisterPage.ts           # Register page interactions
+│   ├── ProductsPage.ts           # Products listing & sort
+│   └── CartPage.ts               # Cart interactions
+│
+├── tests/                        # Test files
+│   ├── auth.setup.ts             # Login session setup (runs once)
+│   ├── login.spec.ts             # Login feature tests
+│   ├── register.spec.ts          # Register feature tests
+│   ├── cart.spec.ts              # Cart feature tests
+│   └── sort.spec.ts              # Sort feature tests
+│
 ├── utils/
-│   └── helpers.ts            # Shared utility functions
-├── playwright/.auth/         # Saved login session (auto-generated)
-├── .env                      # Environment variables (not uploaded to GitHub)
-├── .env.example              # Environment variables template
-├── playwright.config.ts      # Playwright configuration
+│   └── helpers.ts                # Shared utility functions
+│
+├── playwright/
+│   └── .auth/                    # Saved login session (auto-generated)
+│
+├── .env                          # Environment variables (not on GitHub)
+├── .env.example                  # Environment variables template
+├── playwright.config.ts          # Playwright configuration
 └── package.json
-
 ---
 
 ## ⚙️ Requirements
